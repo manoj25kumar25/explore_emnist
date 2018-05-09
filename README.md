@@ -6,8 +6,11 @@ to train i have used emnist letters dataset, and cnn h5 model is 2 gen trained.
 
 to directly use copy all code to a directory and create another directory named data where one need to place letter mapping file 
 e.g if one created emnist folder then directory structure will be 
+
 /emnist
+
 /emnist/emnist-cnn.h5
+
 /emnist/data/emnist-letters-mapping.txt
 
 and update the below code in cnn_test.py to pointing to your image file 
