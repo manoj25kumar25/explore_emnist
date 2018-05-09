@@ -36,12 +36,8 @@ print("Convert data to numpy arrays and normalize images to the interval [0, 1]"
 print(len(X_train))
 print(len(y_train))
 
-
-print("###")
-print('697932')
-print('697932')
-print("###")
-
+# uncomment below lines to save the image file of emnist 
+'''
 print(X_train[0])
 i=0
 #im = Image.frombytes('L',(28,28),X_train[0])
@@ -50,12 +46,12 @@ for temp in X_train:
 	temp=temp*255
 	im = Image.fromarray(temp).convert('L')
 	
-	directory= 'image/'+str(y_train[i])
+	directory= str(y_train[i])
 	if not os.path.exists(directory):
 		os.makedirs(directory)
 	im.save(directory+"/"+str(i)+'.png')
 	i=i+1
-
+'''
 
 X_train = np.array(X_train, 'int16') / 255
 y_train = np.array(y_train,'int')
